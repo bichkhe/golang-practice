@@ -45,84 +45,79 @@ var columnIndexMap map[string]int
 
 
 
-func testWriteHeaderXLSX(xlsx* excelize.File){
-	index := xlsx.NewSheet("LoanTT")
+func testWriteHeaderXLSX(xlsx* excelize.File, cellname string){
+	index := xlsx.NewSheet(cellname)
 	// Set value of a cell.
-	xlsx.MergeCell("LoanTT", "A5", "A6")
-	xlsx.SetCellValue("LoanTT", "A5", "TTS")
-	xlsx.MergeCell("LoanTT", "B5", "B6")
-	xlsx.SetCellValue("LoanTT", "C5", "Tên Bệnh nhân")
-	xlsx.MergeCell("LoanTT", "C5", "C6")
-	xlsx.SetCellValue("LoanTT", "C5", "SĐT")
-	xlsx.MergeCell("LoanTT", "D5", "D6")
-	xlsx.SetCellValue("LoanTT", "D5", "Địa chỉ")
-
-
-
-
-
+	xlsx.MergeCell(cellname, "A5", "A6")
+	xlsx.SetCellValue(cellname, "A5", "TTS")
+	xlsx.MergeCell(cellname, "B5", "B6")
+	xlsx.SetCellValue(cellname, "C5", "Tên Bệnh nhân")
+	xlsx.MergeCell(cellname, "C5", "C6")
+	xlsx.SetCellValue(cellname, "C5", "SĐT")
+	xlsx.MergeCell(cellname, "D5", "D6")
+	xlsx.SetCellValue(cellname, "D5", "Địa chỉ")
 
 	//Tháng
-	xlsx.MergeCell("LoanTT", "E5", "F5")
-	xlsx.SetCellValue("LoanTT", "E5", "Tháng 1")
-	xlsx.SetCellValue("LoanTT", "E6", "Ngày")
-	xlsx.SetCellValue("LoanTT", "F6", "Số lượng")
+	xlsx.MergeCell(cellname, "E5", "F5")
+	xlsx.SetCellValue(cellname, "E5", "Tháng 1")
+	xlsx.SetCellValue(cellname, "E6", "Ngày")
+	xlsx.SetCellValue(cellname, "F6", "Số lượng")
 	//Tháng
-	xlsx.MergeCell("LoanTT", "G5", "H5")
-	xlsx.SetCellValue("LoanTT", "G5", "Tháng 2")
-	xlsx.SetCellValue("LoanTT", "G6", "Ngày")
-	xlsx.SetCellValue("LoanTT", "H6", "Số lượng")
+	xlsx.MergeCell(cellname, "G5", "H5")
+	xlsx.SetCellValue(cellname, "G5", "Tháng 2")
+	xlsx.SetCellValue(cellname, "G6", "Ngày")
+	xlsx.SetCellValue(cellname, "H6", "Số lượng")
 	//Tháng
-	xlsx.MergeCell("LoanTT", "I5", "J5")
-	xlsx.SetCellValue("LoanTT", "I5", "Tháng 3")
-	xlsx.SetCellValue("LoanTT", "I6", "Ngày")
-	xlsx.SetCellValue("LoanTT", "J6", "Số lượng")
+	xlsx.MergeCell(cellname, "I5", "J5")
+	xlsx.SetCellValue(cellname, "I5", "Tháng 3")
+	xlsx.SetCellValue(cellname, "I6", "Ngày")
+	xlsx.SetCellValue(cellname, "J6", "Số lượng")
 	//Tháng
-	xlsx.MergeCell("LoanTT", "K5", "L5")
-	xlsx.SetCellValue("LoanTT", "K5", "Tháng 4")
-	xlsx.SetCellValue("LoanTT", "K6", "Ngày")
-	xlsx.SetCellValue("LoanTT", "L6", "Số lượng")
+	xlsx.MergeCell(cellname, "K5", "L5")
+	xlsx.SetCellValue(cellname, "K5", "Tháng 4")
+	xlsx.SetCellValue(cellname, "K6", "Ngày")
+	xlsx.SetCellValue(cellname, "L6", "Số lượng")
 	//Tháng
-	xlsx.MergeCell("LoanTT", "M5", "N5")
-	xlsx.SetCellValue("LoanTT", "M5", "Tháng 5")
-	xlsx.SetCellValue("LoanTT", "M6", "Ngày")
-	xlsx.SetCellValue("LoanTT", "N6", "Số lượng")
+	xlsx.MergeCell(cellname, "M5", "N5")
+	xlsx.SetCellValue(cellname, "M5", "Tháng 5")
+	xlsx.SetCellValue(cellname, "M6", "Ngày")
+	xlsx.SetCellValue(cellname, "N6", "Số lượng")
 	//Tháng
-	xlsx.MergeCell("LoanTT", "O5", "P5")
-	xlsx.SetCellValue("LoanTT", "O5", "Tháng 6")
-	xlsx.SetCellValue("LoanTT", "O6", "Ngày")
-	xlsx.SetCellValue("LoanTT", "P6", "Số lượng")
+	xlsx.MergeCell(cellname, "O5", "P5")
+	xlsx.SetCellValue(cellname, "O5", "Tháng 6")
+	xlsx.SetCellValue(cellname, "O6", "Ngày")
+	xlsx.SetCellValue(cellname, "P6", "Số lượng")
 	//Tháng
-	xlsx.MergeCell("LoanTT", "R5", "S5")
-	xlsx.SetCellValue("LoanTT", "R5", "Tháng 7")
-	xlsx.SetCellValue("LoanTT", "R6", "Ngày")
-	xlsx.SetCellValue("LoanTT", "S6", "Số lượng")
+	xlsx.MergeCell(cellname, "Q5", "R5")
+	xlsx.SetCellValue(cellname, "Q5", "Tháng 7")
+	xlsx.SetCellValue(cellname, "Q6", "Ngày")
+	xlsx.SetCellValue(cellname, "R6", "Số lượng")
 	//Tháng
-	xlsx.MergeCell("LoanTT", "X5", "T5")
-	xlsx.SetCellValue("LoanTT", "X", "Tháng 8")
-	xlsx.SetCellValue("LoanTT", "X6", "Ngày")
-	xlsx.SetCellValue("LoanTT", "T6", "Số lượng")
+	xlsx.MergeCell(cellname, "S5", "T5")
+	xlsx.SetCellValue(cellname, "S5", "Tháng 8")
+	xlsx.SetCellValue(cellname, "S6", "Ngày")
+	xlsx.SetCellValue(cellname, "T6", "Số lượng")
 	//Tháng
-	xlsx.MergeCell("LoanTT", "U5", "V5")
-	xlsx.SetCellValue("LoanTT", "U5", "Tháng 9")
-	xlsx.SetCellValue("LoanTT", "U6", "Ngày")
-	xlsx.SetCellValue("LoanTT", "V6", "Số lượng")
+	xlsx.MergeCell(cellname, "U5", "V5")
+	xlsx.SetCellValue(cellname, "U5", "Tháng 9")
+	xlsx.SetCellValue(cellname, "U6", "Ngày")
+	xlsx.SetCellValue(cellname, "V6", "Số lượng")
 	//Tháng
-	xlsx.MergeCell("LoanTT", "X5", "Y5")
-	xlsx.SetCellValue("LoanTT", "X5", "Tháng 10")
-	xlsx.SetCellValue("LoanTT", "X6", "Ngày")
-	xlsx.SetCellValue("LoanTT", "Y6", "Số lượng")
+	xlsx.MergeCell(cellname, "W5", "X5")
+	xlsx.SetCellValue(cellname, "W5", "Tháng 10")
+	xlsx.SetCellValue(cellname, "W6", "Ngày")
+	xlsx.SetCellValue(cellname, "X6", "Số lượng")
 
 	//Tháng
-	xlsx.MergeCell("LoanTT", "Z5", "AA5")
-	xlsx.SetCellValue("LoanTT", "Z5", "Tháng 11")
-	xlsx.SetCellValue("LoanTT", "Z6", "Ngày")
-	xlsx.SetCellValue("LoanTT", "AA6", "Số lượng")
+	xlsx.MergeCell(cellname, "Y5", "Z5")
+	xlsx.SetCellValue(cellname, "Y5", "Tháng 11")
+	xlsx.SetCellValue(cellname, "Y6", "Ngày")
+	xlsx.SetCellValue(cellname, "Z6", "Số lượng")
 	//Tháng
-	xlsx.MergeCell("LoanTT", "AB5", "AC5")
-	xlsx.SetCellValue("LoanTT", "AB5", "Tháng 12")
-	xlsx.SetCellValue("LoanTT", "AB6", "Ngày")
-	xlsx.SetCellValue("LoanTT", "AC6", "Số lượng")
+	xlsx.MergeCell(cellname, "AA5", "AB5")
+	xlsx.SetCellValue(cellname, "AA5", "Tháng 12")
+	xlsx.SetCellValue(cellname, "AA6", "Ngày")
+	xlsx.SetCellValue(cellname, "AB6", "Số lượng")
 
 
 	xlsx.SetActiveSheet(index)
@@ -225,7 +220,8 @@ func doTheFliegelAndVanFlandernAlgorithm(jd int) (day, month, year int) {
 	y := 100*(n-49) + i + l
 	return d, m, y
 }
-func testReadXLSX(file string){
+func testReadXLSX(file string, sheetName string, doctor string){
+	fmt.Printf ("================== READING %s ====================", file)
 	xlsx, err := excelize.OpenFile(file)
 	if err != nil {
 		fmt.Println(err)
@@ -233,9 +229,9 @@ func testReadXLSX(file string){
 	}
 
 	// Get all the rows in the Sheet1.
-	rows := xlsx.GetRows("cty")
+	rows := xlsx.GetRows(sheetName)
 	for _, row := range rows {
-		if strings.Contains(row[3], "NĐ") == true {
+		if strings.Contains(row[3], doctor) == true {
 			fmt.Printf("%s -- %s --%s--%s\n", row[1], row[3],row[6], row[15])
 
 			nameArr := strings.Split(row[3], "-")
@@ -383,127 +379,124 @@ func testReadOutputXLSX(file string){
 	// Get all the rows in the Sheet1.
 	rows := xlsx.GetRows("au2018")
 	for idx, row := range rows {
-			if(idx >= 9) {
-				fmt.Printf("%s--%s--%s--%s--%s--%s\n", row[1], row[2], row[9], row[10], row[11], row[12])
+		if(idx >= 9) {
+			fmt.Printf("%s--%s--%s--%s--%s--%s\n", row[1], row[2], row[9], row[10], row[11], row[12])
 
-				if len(row[1]) ==0{
-					continue
+			if len(row[1]) ==0{
+				continue
+			}
+
+			//WRITE TO FILE
+			w.WriteString(row[1])
+			w.WriteString(",")
+			w.WriteString(row[2])
+			w.WriteString(",")
+
+			for  i:=0 ; i<27; i++ {
+				if len(row[i])==0 {
+					row[i]= "0"
 				}
-
-				//WRITE TO FILE
-				w.WriteString(row[1])
+				w.WriteString(row[i])
 				w.WriteString(",")
-				w.WriteString(row[2])
-				w.WriteString(",")
-
-				for  i:=0 ; i<27; i++ {
-					if len(row[i])==0 {
-						row[i]= "0"
-					}
-					w.WriteString(row[i])
-					w.WriteString(",")
-
-				}
-
-				w.WriteString("\r\n")
-
-
-				// SAVE INTO MAP
-				//months := make([]DataMonth, 0)
-				monthsMap := make(map[int]*DataMonth, 0)
-				i := 3
-				for j:=1; j<=12; j++ {
-
-					dayStr := row[i]
-					i++
-					numberStr:= row[i]
-					i++
-					if len(dayStr)==0 {
-						dayStr= "0"
-					}
-					if len(numberStr)==0 {
-						numberStr= "0"
-					}
-
-					day,_ := strconv.ParseInt(dayStr, 10, 32)
-					number,_ := strconv.ParseInt(numberStr, 10, 32)
-					monthStr :=fmt.Sprintf("Tháng %d", j)
-
-					//fmt.Printf("==============%s-%s-%s", dayStr, numberStr, monthStr)
-
-					data := &DataMonth{
-						NameMonth: monthStr,
-						DayOfMonth: day,
-						Number: number,
-					}
-					//months = append(months, data)
-
-					monthsMap[j] = data
-				}
-
-
-				addressArr := strings.Split(row[2], "-")
-
-				mobile := addressArr[0]
-				var address string
-				if len(addressArr) >1 {
-					address = addressArr[1]
-				}else {
-					address  ="Không rõ"
-				}
-				customer := &Customer{
-					Name: row[1],
-					DoctorName: "BS Nguyên",
-					Address:  address,
-					Mobile:mobile,
-					DataMap: monthsMap,
-
-				}
-				fmt.Printf("CUSTOMER:%s, Doctor:%s, Address:%s, Mobile:%s\n",
-					row[1],"BS Nguyên", address, mobile)
-
-
-
-				for  idx, j:=0, 1; idx<len(monthsMap); idx++{
-					fmt.Printf("BEFORE===%s-%d-%d\n", monthsMap[j].NameMonth, monthsMap[j].Number,
-						monthsMap[j].DayOfMonth)
-
-					//monthsMap[j].DayOfMonth =
-					j++
-				}
-
-				//for  idx, j:=0, 1; idx<len(monthsMap); idx++{
-				//	fmt.Printf("AFTER===%s-%d-%d\n", monthsMap[j].NameMonth, monthsMap[j].Number,
-				//		monthsMap[j].DayOfMonth)
-				//	j++
-				//}
-
-				customer_list = append(customer_list, customer)
-
-
-				//w.WriteString(",")
-				//w.WriteString(row[10])
-				//w.WriteString(",")
-				//w.WriteString(row[11])
-				//w.WriteString(",")
-				//w.WriteString(row[12])
-				//w.WriteString(",")
-				//w.WriteString(row[13])
-				//w.WriteString(",")
-				//w.WriteString(row[14])
 
 			}
+
+			w.WriteString("\r\n")
+
+
+			// SAVE INTO MAP
+			//months := make([]DataMonth, 0)
+			monthsMap := make(map[int]*DataMonth, 0)
+			i := 3
+			for j:=1; j<=12; j++ {
+
+				dayStr := row[i]
+				i++
+				numberStr:= row[i]
+				i++
+				if len(dayStr)==0 {
+					dayStr= "0"
+				}
+				if len(numberStr)==0 {
+					numberStr= "0"
+				}
+
+				day,_ := strconv.ParseInt(dayStr, 10, 32)
+				number,_ := strconv.ParseInt(numberStr, 10, 32)
+				monthStr :=fmt.Sprintf("Tháng %d", j)
+
+				//fmt.Printf("==============%s-%s-%s", dayStr, numberStr, monthStr)
+
+				data := &DataMonth{
+					NameMonth: monthStr,
+					DayOfMonth: day,
+					Number: number,
+				}
+				//months = append(months, data)
+
+				monthsMap[j] = data
+			}
+
+
+			addressArr := strings.Split(row[2], "-")
+
+			mobile := addressArr[0]
+			var address string
+			if len(addressArr) >1 {
+				address = addressArr[1]
+			}else {
+				address  ="Không rõ"
+			}
+			customer := &Customer{
+				Name: row[1],
+				DoctorName: "BS Nguyên",
+				Address:  address,
+				Mobile:mobile,
+				DataMap: monthsMap,
+
+			}
+			fmt.Printf("CUSTOMER:%s, Doctor:%s, Address:%s, Mobile:%s\n",
+				row[1],"BS Nguyên", address, mobile)
+
+
+
+			for  idx, j:=0, 1; idx<len(monthsMap); idx++{
+				fmt.Printf("BEFORE===%s-%d-%d\n", monthsMap[j].NameMonth, monthsMap[j].Number,
+					monthsMap[j].DayOfMonth)
+
+				//monthsMap[j].DayOfMonth =
+				j++
+			}
+
+			//for  idx, j:=0, 1; idx<len(monthsMap); idx++{
+			//	fmt.Printf("AFTER===%s-%d-%d\n", monthsMap[j].NameMonth, monthsMap[j].Number,
+			//		monthsMap[j].DayOfMonth)
+			//	j++
+			//}
+
+			customer_list = append(customer_list, customer)
+
+
+			//w.WriteString(",")
+			//w.WriteString(row[10])
+			//w.WriteString(",")
+			//w.WriteString(row[11])
+			//w.WriteString(",")
+			//w.WriteString(row[12])
+			//w.WriteString(",")
+			//w.WriteString(row[13])
+			//w.WriteString(",")
+			//w.WriteString(row[14])
+
+		}
 	}
 }
 
-func testWriteXLSX(f string){
-	xlsx := excelize.NewFile()
-	testWriteHeaderXLSX(xlsx)
+func testWriteXLSX(xlsx *excelize.File, f string, cellName string){
 
+	testWriteHeaderXLSX(xlsx, cellName)
 
 	var i int =10
-
-
 
 	for idx:=0; idx <len(customer_list); idx++{
 
@@ -521,6 +514,10 @@ func testWriteXLSX(f string){
 		colNumberOfApril :=fmt.Sprintf("L%d", i)
 		colDayMonthMay :=fmt.Sprintf("M%d", i)
 		colNumberOfMay :=fmt.Sprintf("N%d", i)
+		colDayMonthJune :=fmt.Sprintf("O%d", i)
+		colNumberOfJune :=fmt.Sprintf("P%d", i)
+		colDayMonthJuly :=fmt.Sprintf("Q%d", i)
+		colNumberOfJuly :=fmt.Sprintf("R%d", i)
 
 		fmt.Printf("=====INSETED %s-%s ============ \n", customer.Name,  customer.Mobile)
 
@@ -530,30 +527,39 @@ func testWriteXLSX(f string){
 			fmt.Printf("%d-%d-%d\n", k, v.DayOfMonth, v.Number)
 		}
 
-		xlsx.SetCellValue("LoanTT",colName, customer.Name)
-		xlsx.SetCellValue("LoanTT",colMobile, customer.Mobile)
-		xlsx.SetCellValue("LoanTT",colAddress, customer.Address)
+		xlsx.SetCellValue(cellName,colName, customer.Name)
+		xlsx.SetCellValue(cellName,colMobile, customer.Mobile)
+		xlsx.SetCellValue(cellName,colAddress, customer.Address)
 		if customer.DataMap[1].Number !=0 {
-			xlsx.SetCellValue("LoanTT", colDayMonthJan, customer.DataMap[1].DayOfMonth)
-			xlsx.SetCellValue("LoanTT", colNumberOfJan, customer.DataMap[1].Number)
+			xlsx.SetCellValue(cellName, colDayMonthJan, customer.DataMap[1].DayOfMonth)
+			xlsx.SetCellValue(cellName, colNumberOfJan, customer.DataMap[1].Number)
 		}
 		if customer.DataMap[2].Number !=0 {
-			xlsx.SetCellValue("LoanTT", colDayMonthFeb, customer.DataMap[2].DayOfMonth)
-			xlsx.SetCellValue("LoanTT", colNumberOfFeb, customer.DataMap[2].Number)
+			xlsx.SetCellValue(cellName, colDayMonthFeb, customer.DataMap[2].DayOfMonth)
+			xlsx.SetCellValue(cellName, colNumberOfFeb, customer.DataMap[2].Number)
 		}
 
 		if customer.DataMap[3].Number !=0 {
-			xlsx.SetCellValue("LoanTT", colDayMonthMarch, customer.DataMap[3].DayOfMonth)
-			xlsx.SetCellValue("LoanTT", colNumberOfMarch, customer.DataMap[3].Number)
+			xlsx.SetCellValue(cellName, colDayMonthMarch, customer.DataMap[3].DayOfMonth)
+			xlsx.SetCellValue(cellName, colNumberOfMarch, customer.DataMap[3].Number)
 		}
 
 		if customer.DataMap[4].Number !=0 {
-			xlsx.SetCellValue("LoanTT", colDayMonthApril, customer.DataMap[4].DayOfMonth)
-			xlsx.SetCellValue("LoanTT", colNumberOfApril, customer.DataMap[4].Number)
+			xlsx.SetCellValue(cellName, colDayMonthApril, customer.DataMap[4].DayOfMonth)
+			xlsx.SetCellValue(cellName, colNumberOfApril, customer.DataMap[4].Number)
 		}
 		if customer.DataMap[5].Number !=0 {
-			xlsx.SetCellValue("LoanTT", colDayMonthMay, customer.DataMap[5].DayOfMonth)
-			xlsx.SetCellValue("LoanTT", colNumberOfMay, customer.DataMap[5].Number)
+			xlsx.SetCellValue(cellName, colDayMonthMay, customer.DataMap[5].DayOfMonth)
+			xlsx.SetCellValue(cellName, colNumberOfMay, customer.DataMap[5].Number)
+		}
+		if customer.DataMap[6].Number !=0 {
+			xlsx.SetCellValue(cellName, colDayMonthJune, customer.DataMap[6].DayOfMonth)
+			xlsx.SetCellValue(cellName, colNumberOfJune, customer.DataMap[6].Number)
+		}
+		if customer.DataMap[7].Number !=0 {
+			xlsx.SetCellValue(cellName, colDayMonthJuly, customer.DataMap[7].DayOfMonth)
+			xlsx.SetCellValue(cellName, colNumberOfJuly, customer.DataMap[7].Number)
+			
 		}
 
 
@@ -606,12 +612,40 @@ func main(){
 
 	//testWriteHeaderXLSX()
 
-	testReadOutputXLSX("./TDBN_Nguyên_2018.xlsx")
+	//testReadOutputXLSX("xlsx/TDBN_Nguyen_2018.xlsx")
 
+	xlsx := excelize.NewFile()
+	doctocs  :=  []string{
+		"BS Nguyên",
+		"BS Cửu",
+		"BS Bình",
+		"BS Hưng",
+		"BS Hùng",
+		"BS Nhật",
+		"BS Hương",
+		"BS Phúc",
+		"BS Thư",
+		"BS Trung",
+		"BS Điểu",
+		"BS Văn Tuấn",
+		"BS Huy",
+	}
 
-	testReadXLSX("./Loan_29.5.xlsx")
-	testWriteXLSX("./Output.xlsx")
+	//var doctor string = "BS Nguyên"
 
+	for _, doctor := range doctocs {
+		testReadXLSX("xlsx/TDBN_Thang1.xlsx", "Sheet1", doctor)
+		testReadXLSX("xlsx/TDBN_Thang2.xlsx", "Sheet1", doctor)
+		testReadXLSX("xlsx/TDBN_Thang3.xlsx", "Sheet1", doctor)
+		testReadXLSX("xlsx/TDBN_Thang4.xlsx", "Sheet1", doctor)
+		testReadXLSX("xlsx/TDBN_Thang5.xlsx", "Sheet1", doctor)
+		testReadXLSX("xlsx/TDBN_Thang6.xlsx", "Sheet1", doctor)
+
+		output := fmt.Sprintf("xlsx/%s.xlsx", "LoanTT")
+		testWriteXLSX(xlsx, output, doctor)
+		customer_list = customer_list[:0]
+
+	}
 	//for  idx, j:=0, 1; idx<len(customer_list); idx++{
 	//
 	//}
